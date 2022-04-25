@@ -15,7 +15,7 @@ epsilon_o = 0.012 ; % reference viscosity of the newtonian fluid
 mu_o= 1.2*10^-3 ;       % zero shear viscosity
 
 %no of meshes;
-N=20;
+N=100;
 %discretize our space 
 y_vec= linspace(0,10,N);
 dy=y_vec(2)-y_vec(1); %dx

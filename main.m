@@ -205,13 +205,8 @@ for j=1:length(t_vec)-1
     
 end
 
-% y_b=0:0.1:15;
-U_b1=exp(-y_vec/2^0.5).*cos(2*pi-y_vec/2^0.5);
-U_b2=1*exp(-y_vec/2^0.5).*cos(2*pi-y_vec/2^0.5);
-U_b3=1.5*exp(-y_vec/2^0.5).*cos(2*pi-y_vec/2^0.5);
-%U_b4=exp(-y_vec/2^0.5).*sin(2*pi-y_vec/2^0.5);
 
-plot(theta_mat(:,50),y_vec,'-r');
+plot(U_mat(:,50),y_vec,'-r');
 hold on;
 % plot(U_b2,y_vec,'-.b');
 % plot(U_b3,y_vec,'--g');
@@ -225,7 +220,7 @@ hold on;
 % 
 % [tt,yy]=meshgrid(t_vec,y_vec);
 % 
-% mesh(yy,tt,theta_mat)
+% mesh(yy,tt,U_mat)
 % 
 % xlabel('eta ');
 % ylabel('Time(t)');

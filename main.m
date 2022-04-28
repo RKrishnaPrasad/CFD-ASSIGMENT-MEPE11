@@ -206,25 +206,16 @@ for j=1:length(t_vec)-1
 end
 
 
-plot(U_mat(:,50),y_vec,'-r');
-hold on;
-% plot(U_b2,y_vec,'-.b');
-% plot(U_b3,y_vec,'--g');
-% plot(U_b4,y_vec);
-% hold on;
-% plot(U_mat(:,137),y_vec)
-% legend('T=2pi','T=pi/2','T=pi','T=3pi/2')
-% xlabel('U')
-% ylabel('tau(T)')
-% %plot
-% 
-% [tt,yy]=meshgrid(t_vec,y_vec);
-% 
-% mesh(yy,tt,U_mat)
-% 
-% xlabel('eta ');
-% ylabel('Time(t)');
-% zlabel('theta(U)');
+%plot(U_mat(:,50),y_vec,'-r');
+%hold on;
+ 
+[tt,yy]=meshgrid(t_vec,y_vec);
+
+mesh(yy,tt,U_mat)
+
+xlabel('eta ');
+ylabel('Time(t)');
+zlabel('theta(U)');
 
 
 
